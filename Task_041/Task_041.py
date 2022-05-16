@@ -1,3 +1,6 @@
+from typing import no_type_check
+
+
 with open('Task_041\Task_041_RLE.txt', 'r') as data:
     my_text = data.read()
 
@@ -18,20 +21,7 @@ def encode_rle(ss):
             
 str_code = encode_rle(my_text)
 print(str_code)
+dev_12 = str_code
 
 with open('Task_041\Task_041_RLE_encod.txt', 'w') as data:
-    my_text2 = data.read()
-
-def decoding_rle(ss:str):
-    count = ''
-    str_decode = ''
-    for char in ss:
-        if char.isdigit():
-            count += char 
-        else:
-            str_decode += char * int(count)
-            count = ''
-    return str_decode
-
-str_decode = decoding_rle(my_text2)
-print(str_decode)
+    data.write(dev_12)
