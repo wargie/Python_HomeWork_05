@@ -1,6 +1,3 @@
-from typing import no_type_check
-
-
 with open('Task_041\Task_041_RLE.txt', 'r') as data:
     my_text = data.read()
 
